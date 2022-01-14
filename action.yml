@@ -16,7 +16,7 @@ runs:
   using: composite
   steps:
     - name: Install cargo hack
-      uses: baptiste0928/cargo-install
+      uses: baptiste0928/cargo-install@v1
       id: install
       with:
         crate: cargo-hack
