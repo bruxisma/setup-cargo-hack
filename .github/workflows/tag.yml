@@ -1,0 +1,9 @@
+name: Update Tag Versions
+on:
+  release:
+    types: [published, edited]
+jobs:
+  tag:
+    steps:
+      - name: Promote Tags
+        uses: Actions-R-Us/actions-tagger@latest
