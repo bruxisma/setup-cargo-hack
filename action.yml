@@ -1,0 +1,23 @@
+name: Setup Cargo Hack
+description: Setup cargo hack tool and add it to the path
+branding:
+  color: blue
+  info: play-circle
+inputs:
+  cargo-hack-version:
+    description: Version range of cargo-hack to install
+    required: true
+    default: latest
+outputs:
+  cache-hit:
+    description: Whether an exact match was found for cargo-hack
+    value: ${{steps.install.outputs.cache-hit}}
+runs:
+  using: composite
+  steps:
+    - name: Install cargo hack
+      uses: baptiste0928/cargo-install
+      id: install
+      with:
+        crate: cargo-hack
+        version: ${{inputs.cargo-hack-version}}
