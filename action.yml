@@ -2,7 +2,7 @@ name: Setup Cargo Hack
 description: Setup cargo hack tool and add it to the path
 branding:
   color: blue
-  info: play-circle
+  icon: play-circle
 inputs:
   cargo-hack-version:
     description: Version range of cargo-hack to install
