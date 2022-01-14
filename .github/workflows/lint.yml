@@ -1,4 +1,4 @@
-name: Lint GitHub Action Workflows
+name: Lint GitHub Actions Workflows
 on:
   pull_request:
     types: [synchronize, edited, opened]

@@ -4,6 +4,7 @@ on:
     types: [published, edited]
 jobs:
   tag:
+    runs-on: ubuntu-latest
     steps:
       - name: Promote Tags
         uses: Actions-R-Us/actions-tagger@latest
