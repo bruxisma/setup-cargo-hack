@@ -12,4 +12,4 @@ jobs:
       - name: Checkout
         uses: actions/checkout@dcd71f646680f2efd8db4afa5ad64fdcba30e748 # tag=v3
       - name: Review Dog - actionlint
-        uses: reviewdog/action-actionlint@1e6f7f4e22a3f80c0f05e75fffce17f88b218562 # tag=v1
+        uses: reviewdog/action-actionlint@a0541743e79d2ce4ee65276807ac493a93149b7c # tag=v1
